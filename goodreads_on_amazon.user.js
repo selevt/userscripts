@@ -84,7 +84,7 @@ function injectGoodreadsData(responseDetails) {
 
     if (data) {
         var grLink = document.createElement("a");
-        grLink.innerHTML = '<a href="' + data.link + '" target="_blank">See reviews on GoodReads</a><br />';
+        grLink.innerHTML = '<a href="' + data.link + '" target="_blank">See reviews on Goodreads</a><br />';
         amzPriceBlock.parentNode.insertBefore(grLink, amzPriceBlock);
 
         // load the goodreads CSS to show the pretty stars and the moon
