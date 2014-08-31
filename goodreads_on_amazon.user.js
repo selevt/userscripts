@@ -79,7 +79,7 @@ function getData(pageResult) {
 }
 
 function injectGoodreadsData(responseDetails) {
-    var amzPriceBlock = document.getElementById('btAsinTitle').parentNode.parentNode.nextSibling,
+    var amzPriceBlock = document.getElementById('averageCustomerReviews'),
         data = getData(responseDetails.responseText);
 
     if (data) {
@@ -100,7 +100,6 @@ function injectGoodreadsData(responseDetails) {
         amzPriceBlock.parentNode.insertBefore(noGr, amzPriceBlock);
     }
 }
-
 
 // do only when on a product page
 if (RE_ASIN_URL.test(location.href)) {
