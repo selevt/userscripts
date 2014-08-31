@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Goodreads on Amazon",
+  "version": "1.0.1.2",
+  "converted_from_user_script": true,
+
+  "description": "Shows the Goodreads rating on Amazon pages and add a link to the Goodreads page",
+   "content_scripts": [ {
+      "js": [ "goodreads_on_amazon.user.js" ],
+      "matches": [ "*://www.amazon.at/*", "*://www.amazon.ca/*", "*://www.amazon.cn/*", "*://www.amazon.co.jp/*", "*://www.amazon.co.uk/*", "*://www.amazon.com/*", "*://www.amazon.de/*", "*://www.amazon.es/*", "*://www.amazon.fr/*", "*://www.amazon.it/*", "*://www.goodreads.com/search*" ]
+   } ]
+}
+
