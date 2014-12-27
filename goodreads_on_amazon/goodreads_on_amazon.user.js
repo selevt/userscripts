@@ -12,6 +12,7 @@
 // @name          Goodreads on Amazon
 // @description   Shows the Goodreads rating on Amazon pages and add a link to the Goodreads page
 // @version       1.0
+// @grant         GM_xmlhttpRequest
 // @match       *://www.amazon.at/*
 // @match       *://www.amazon.fr/*
 // @match       *://www.amazon.cn/*
