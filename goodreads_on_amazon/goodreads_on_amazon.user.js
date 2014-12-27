@@ -79,8 +79,15 @@ function getData(pageResult) {
 }
 
 function injectGoodreadsData(responseDetails) {
-    var amzPriceBlock = document.getElementById('averageCustomerReviews'),
-        data = getData(responseDetails.responseText);
+    var data = getData(responseDetails.responseText);
+
+    var styleIsUsingSpans = false;
+    var amzPriceBlock = document.getElementById('averageCustomerReviews');
+    // different style  on kindle edition pages
+    if (!amzPriceBlock) {
+        amzPriceBlock = document.getElementsByClassName('crAvgStars')[0];
+        styleIsUsingSpans = true;
+    }
 
     if (data) {
         var grLink = document.createElement("a");
@@ -98,6 +105,11 @@ function injectGoodreadsData(responseDetails) {
         var noGr = document.createElement("div");
         noGr.innerHTML = "(not found on Goodreads)";
         amzPriceBlock.parentNode.insertBefore(noGr, amzPriceBlock);
+    }
+
+    if (styleIsUsingSpans) {
+        // Manual line break between GR and amazon sections
+        amzPriceBlock.parentNode.insertBefore(document.createElement("br"), amzPriceBlock);
     }
 }
 

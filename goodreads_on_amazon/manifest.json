@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Goodreads on Amazon",
-  "version": "1.0.1.2",
+  "version": "1.0.2",
   "converted_from_user_script": true,
 
   "description": "Shows the Goodreads rating on Amazon pages and add a link to the Goodreads page",
