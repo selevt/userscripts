@@ -22,6 +22,7 @@
 // @match       *://www.amazon.de/*
 // @match       *://www.amazon.es/*
 // @match       *://www.amazon.it/*
+// @match       *://www.amazon.in/*
 // @match       *://www.amazon.co.uk/*
 // @match       *://www.goodreads.com/search*
 // ==/UserScript==
